@@ -1,2 +1,2 @@
-.body{color:red}
+:root{--mine-font: 'Roboto', sans-serif;--secondary-font: 'Raleway', sans-serif;--mine-text-color: #757575;--title-text-color: #212121;--secondary-text-color: #ffffff;--accent-color: #2196f3;--mine-background: #ffffff;--secondary-background: #2f303a}*,*::before,*::after{padding:0;margin:0}img{display:block}.list{list-style:none}.link{text-decoration:none}body{font-family:var(--mine-font);font-style:normal;color:var(--mine-text-color);background-color:var(--mine-background)}.container{width:1200px;padding:0 15px;margin:0 auto;align-items:center}
 /*# sourceMappingURL=main.min.css.map */
