@@ -189,7 +189,7 @@ body {
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: #212121;
   padding: 6px 22px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -199,8 +199,8 @@ body {
 
 .filter-btn:hover,
 .filter-btn:focus {
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
@@ -216,7 +216,7 @@ body {
 .portfolio-list-item {
   width: 370px;
   height: 404px;
-  background: var(--mine-background);
+  background: #ffffff;
   margin-bottom: 30px;
   box-sizing: border-box;
   border: 1px solid #eeeeee;
@@ -251,7 +251,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-text-color);
+  color: #212121;
   margin-bottom: 4px;
 }
 
@@ -284,7 +284,7 @@ body {
 }
 
 .footer {
-  background-color: var(--secondary-background);
+  background-color: #2f303a;
   height: 252px;
 }
 
@@ -305,16 +305,16 @@ body {
 }
 
 .contact-logo {
-  font-family: var(--secondary-font);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: #ffffff;
 }
 
 .contact-logo-chapter {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .contact-list-item:not(:last-child) {
@@ -326,7 +326,7 @@ body {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: #ffffff;
 }
 
 .contact-list-link {
@@ -375,12 +375,12 @@ body {
 .footer-svg {
   width: 20px;
   height: 20px;
-  fill: var(--mine-background);
+  fill: #ffffff;
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .footer-subscribe {
@@ -404,7 +404,7 @@ body {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -425,22 +425,22 @@ body {
 .subscribe-form-btn {
   display: flex;
   align-items: center;
-  font-family: var(--mine-font);
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--secondary-text-color);
+  color: #ffffff;
   padding: 10px 28px;
   min-width: 200px;
   height: 50px;
   border-radius: 4px;
   border-style: hidden;
   margin: 0 auto;
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
   cursor: pointer;
 }
 
@@ -450,7 +450,7 @@ body {
   width: 24px;
   height: 24px;
   background-image: url(../images/icon-send.svg);
-  fill: var(--mine-background);
+  fill: #ffffff;
   margin-left: 10px;
 }
 /*# sourceMappingURL=portfolio.css.map */

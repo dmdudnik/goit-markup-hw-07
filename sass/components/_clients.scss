@@ -60,10 +60,10 @@
 
 .clients-list-link:hover .clients-logo-svg,
 .clients-list-link:focus .clients-logo-svg {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .clients-list-link:hover,
 .clients-list-link:focus {
-  border: 1px solid var(--accent-color);
+  border: 1px solid $accent-color;
 }

@@ -9,7 +9,7 @@
 .portfolio-list-item {
   width: 370px;
   height: 404px;
-  background: var(--mine-background);
+  background: $mine-background;
   margin-bottom: 30px;
   box-sizing: border-box;
   border: 1px solid #eeeeee;
@@ -43,7 +43,7 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-text-color);
+  color: $title-text-color;
   margin-bottom: 4px;
 }
 
