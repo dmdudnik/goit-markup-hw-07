@@ -17,8 +17,8 @@ img {
 }
 
 body {
-  font-family: var(--mine-font);
+  font-family: $mine-font;
   font-style: normal;
-  color: var(--mine-text-color);
-  background-color: var(--mine-background);
+  color: $mine-text-color;
+  background-color: $mine-background;
 }
