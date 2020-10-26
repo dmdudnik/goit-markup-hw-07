@@ -20,11 +20,21 @@
   border-radius: 4px;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   padding: 40px;
-}
 
-.backdrop.is-hidden .modal {
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transform: translate(-50%, -50%) scale(0);
+  &-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .backdrop.is-hidden & {
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transform: translate(-50%, -50%) scale(0);
+  }
 }
 
 .close-btn {
@@ -55,60 +65,48 @@
   fill: black;
 }
 
-.modal-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  color: $title-text-color;
-  text-align: center;
-  margin-bottom: 12px;
-}
-
-/* ======== CONTACT FORM ======== */
 .modal-form {
   display: flex;
   flex-wrap: wrap;
-}
 
-.modal-form-field {
-  margin-bottom: 10px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.167;
-  letter-spacing: 0.01em;
-  color: $mine-text-color;
-}
+  &-field {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+    color: $mine-text-color;
+  }
 
-.modal-form-field-wrapper {
-  display: block;
-  position: relative;
-  margin-top: 4px;
-}
+  &-field-wrapper {
+    display: block;
+    position: relative;
+    margin-top: 4px;
+  }
 
-.modal-form-input {
-  display: block;
-  width: 448px;
-  height: 40px;
-  padding-left: 42px;
-}
+  &-input {
+    display: block;
+    width: 448px;
+    height: 40px;
+    padding-left: 42px;
+  }
 
-.modal-form-message {
-  display: block;
-  margin-top: 4px;
-  width: 448px;
-  height: 120px;
-  resize: none;
-  padding: 12px 16px;
-}
+  &-message {
+    display: block;
+    margin-top: 4px;
+    width: 448px;
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
 
-.modal-form-message::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
 }
 
 .modal-form-input,
@@ -125,18 +123,10 @@
   border: 1px solid $accent-color;
 }
 
-.modal-form-input:focus + .modal-form-svg {
-  fill: $accent-color;
-}
-
 .modal-form-input:hover,
 .modal-form-message:hover {
   border: 1px solid $accent-color;
   cursor: pointer;
-}
-
-.modal-form-input:hover + .modal-form-svg {
-  fill: $accent-color;
 }
 
 .modal-form-svg {
@@ -148,6 +138,14 @@
   transform: translateY(-50%);
   fill: $title-text-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-form-input:focus + & {
+    fill: $accent-color;
+  }
+
+  .modal-form-input:hover + & {
+    fill: $accent-color;
+  }
 }
 
 .icon-name,
@@ -165,18 +163,18 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
 
-.modal-form-policy-label {
-  display: flex;
-  align-items: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: #757575;
-  padding-top: 10px;
-  margin-bottom: 30px;
+  &-label {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: #757575;
+    padding-top: 10px;
+    margin-bottom: 30px;
+  }
 }
 
 .checkbox-icon {
@@ -186,14 +184,14 @@
   border: 1px solid #000000;
   border-radius: 4px;
   margin-right: 7px;
-}
 
-.modal-form-policy:checked + .checkbox-icon {
-  border: 1px solid $accent-color;
-  background-color: $accent-color;
-  background-image: url(../images/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
+  .modal-form-policy:checked + & {
+    border: 1px solid $accent-color;
+    background-color: $accent-color;
+    background-image: url(../images/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
 }
 
 .modal-form-btn {
