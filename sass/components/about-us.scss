@@ -1,15 +1,25 @@
 .about-us {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.about-us-list {
-  display: flex;
-  justify-content: space-between;
-}
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.about-us .title {
-  margin-bottom: 50px;
+  &-list-item {
+    position: relative;
+  }
+
+  &-list-subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    margin: 0 auto;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
 
 .title {
@@ -19,11 +29,12 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $title-text-color;
+
+  .about-us & {
+    margin-bottom: 50px;
+  }
 }
 
-.about-us-list-item {
-  position: relative;
-}
 .overlay {
   position: absolute;
   display: flex;
@@ -34,15 +45,4 @@
   bottom: 0;
   left: 0;
   background: rgba(47, 48, 58, 0.8);
-}
-
-.about-list-subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  margin: 0 auto;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #ffffff;
 }
