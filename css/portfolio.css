@@ -41,6 +41,10 @@ body {
   margin-bottom: 50px;
 }
 
+.clients .title {
+  margin-bottom: 50px;
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
