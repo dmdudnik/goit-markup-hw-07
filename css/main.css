@@ -61,6 +61,11 @@ body {
   padding-bottom: 200px;
 }
 
+.portfolio-selector .container {
+  padding-top: 94px;
+  padding-bottom: 34px;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
