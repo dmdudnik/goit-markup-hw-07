@@ -31,6 +31,10 @@ body {
   align-items: center;
 }
 
+.header .container {
+  display: flex;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -254,10 +258,6 @@ body {
   border: 1px;
   border-style: solid;
   border-color: #ececec;
-}
-
-.header .container {
-  display: flex;
 }
 
 .navigation {
@@ -493,7 +493,7 @@ body {
   line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .about-us-list-item {

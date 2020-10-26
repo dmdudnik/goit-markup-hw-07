@@ -31,6 +31,10 @@ body {
   align-items: center;
 }
 
+.header .container {
+  display: flex;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -38,10 +42,6 @@ body {
   border: 1px;
   border-style: solid;
   border-color: #ececec;
-}
-
-.header .container {
-  display: flex;
 }
 
 .navigation {

@@ -3,4 +3,13 @@
   padding: 0 15px;
   margin: 0 auto;
   align-items: center;
+
+  .header & {
+    display: flex;
+  }
+
+  .hero & {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
